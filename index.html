@@ -3,152 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOUNA EL BOUAZAOUI</title>
+    <title>Mouna El Bouazaoui</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <div class="custom-cursor"></div>
 </head>
 
 <body>
+    <div class="custom-cursor"></div>
 
-<header>
-    <h1>Mon Portfolio</h1>
-    <p>Étudiante en IT</p>
-    <div class="clock" id="clock">
-    00:00:00
-</div>
-</header>
-
-<main>
-
-    <section class="cards">
-
-        <div class="card">
-            <div class="card-content">
-                <h2>Projet 1</h2>
-                <p>Site web moderne</p>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navigation principale">
+            <a class="navbar-brand" href="#accueil">Mouna El Bouazaoui</a>
+            <div class="navbar-links">
+                <a href="#accueil">Accueil</a>
+                <a href="#competences">Compétences</a>
+                <a href="#projets">Projets</a>
+                <a href="#contact">Contact</a>
             </div>
-        </div>
+        </nav>
+    </header>
 
-        <div class="card">
-            <div class="card-content">
-                <h2>Projet 2</h2>
-                <p>Application mobile</p>
+    <main>
+        <section class="hero" id="accueil">
+            <div class="hero-text">
+                <h1>Hey! Mouna El Bouazaoui Here</h1>
+
+                <p class="subtitle">
+                    Je suis élève ingénieure en Génie Informatique à l'Académie Internationale de l'Aviation Civile (AIAC).
+
+                <p>
+                    J'aime concevoir des solutions efficaces, comprendre le fonctionnement profond des systèmes et travailler sur des projets mêlant web, bases de données, data engineering et analyse.
+                </p>
+
+                <div class="hero-info" id="competences">
+                    <div>
+                        <h4>Domaines</h4>
+                        <ul>
+                            <li>Développement web</li>
+                            <li>Data Engineering</li>
+                            <li>Analyse de données</li>
+                            <li>Machine Learning</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Outils / Skills</h4>
+                        <ul>
+                            <li>Python, Java, SQL</li>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>GitHub, Docker, PostgreSQL</li>
+                            <li>Power BI, Excel, LaTeX</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <div class="card-content">
-                <h2>Projet 3</h2>
-                <p>IA & Data</p>
+            <div class="hero-image">
+                <div class="profile-visual">
+                    <img src="assets/images/photo-mouna.jpeg" alt="Photo de Mouna El Bouazaoui" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+                    <div class="profile-fallback" aria-hidden="true">MEB</div>
+                </div>
             </div>
-        </div>
+        </section>
 
-    </section>
-    <section class="hero">
+        <section class="cards" id="projets" aria-label="Projets">
+            <a class="card" href="https://github.com/ellbouazaouimouna-maker/Systeme-etude-de-credit" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet Data Engineering et Analytics sur GitHub">
+                <div class="card-content">
+                    <h2>Data Engineering & Analytics</h2>
+                    <p>Data Warehouse PostgreSQL, analyse et visualisation avec Power BI, expérimentation de modèles Machine Learning.</p>
+                </div>
+            </a>
 
-    <div class="hero-text">
-        <h1>Hey! Mouna El Bouazaoui Here </h1>
+            <a class="card" href="https://github.com/ellbouazaouimouna-maker/Projet-TO-DO-LIST-avec-DOCKER" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet Application Web To-Do List sur GitHub">
+                <div class="card-content">
+                    <h2>Application Web To-Do List</h2>
+                    <p>Développement HTML/CSS et déploiement avec Docker.</p>
+                </div>
+            </a>
 
-        <p class="subtitle"> 
-I am a 20-year-old computer engineering student at AIAC, with a strong interest in systems, software development, and modern computing technologies.
+            <a class="card" href="https://github.com/ellbouazaouimouna-maker/Gestion-de-salle-de-sport" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet Gestion de Salle de Sport sur GitHub">
+                <div class="card-content">
+                    <h2>Gestion de Salle de Sport</h2>
+                    <p>Application Java pour gérer les adhérents, abonnements, activités sportives et le suivi des membres.</p>
+                </div>
+            </a>
+        </section>
 
-By day (and often night), I work on building and improving technical projects, exploring areas such as web development, databases, and system administration.
+        <section class="professional-experience" aria-labelledby="professional-experience-title">
+            <article class="info-block">
+                <h2 id="professional-experience-title">Expériences professionnelles</h2>
+                <div class="timeline">
+                    <div>
+                        <div class="experience-heading">
+                            <h3>Stage d'observation — Ibhar Network</h3>
+                            <span class="report-link report-link-disabled" aria-disabled="true" title="Le rapport sera ajouté prochainement">
+                                <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                                Rapport bientôt disponible
+                            </span>
+                        </div>
+                        <p>Immersion au sein d'une startup et découverte de son environnement professionnel, de son organisation et de ses activités.</p>
+                    </div>
+                    <div>
+                        <div class="experience-heading">
+                            <h3>Stage — AIC Métallurgie</h3>
+                            <a class="report-link" href="output/pdf/rapport-stage-aic-metallurgie.pdf" target="_blank" rel="noopener noreferrer" aria-label="Voir le rapport du stage AIC Métallurgie au format PDF">
+                                <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                                Voir le rapport de stage
+                            </a>
+                        </div>
+                        <p>Découverte du fonctionnement de l'entreprise et de son environnement industriel.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
 
-Computer science, for me, is more than just a field of study — it's a way of thinking. I enjoy solving complex problems, designing efficient solutions, and understanding how systems work at a deeper level.
+        <section class="section-grid">
+            <article class="info-block">
+                <h2>Éducation</h2>
+                <div class="timeline">
+                    <div>
+                        <h3>Cycle Ingénieur - Génie Informatique</h3>
+                        <p>Académie Internationale de l'Aviation Civile (AIAC) · Depuis 2025</p>
+                    </div>
+                    <div>
+                        <h3>Classes Préparatoires MPSI</h3>
+                        <p>CPGE Mohammed VI, Kénitra · 2023 - 2025</p>
+                    </div>
+                    <div>
+                        <h3>Baccalauréat Sciences Mathématiques A</h3>
+                        <p>Lycée Echriki, Kénitra · Mention Bien · 2023</p>
+                    </div>
+                </div>
+            </article>
 
-Over time, I’ve worked on projects involving Docker-based applications, database management, and web development. I mainly use tools and technologies such as Linux, Git, Docker, Python, JavaScript, and SQL.</p>
-
-        <p>
-            Je suis étudiante en 1 ere annee du cycle d'ingenieur en genie informatique.
-
-        </p>
-
-        <div class="hero-info">
-            <div>
-                <h4>Services</h4>
-                <ul>
-                    <li>Web Development</li>
-                    <li>UI/UX Design</li>
-                    <li>Data Analysis</li>
+            <article class="info-block">
+                <h2>Certifications</h2>
+                <ul class="pill-list">
+                    <li>
+                        <a class="certification-link" href="https://www.coursera.org/account/accomplishments/verify/Z0UGKLXMLCTJ" target="_blank" rel="noopener noreferrer" aria-label="Voir la certification Introduction to Oracle Cloud Essentials">
+                            Introduction to Oracle Cloud Essentials - Oracle (2026)
+                            <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="certification-link" href="https://www.coursera.org/account/accomplishments/verify/S3KETOP39G07" target="_blank" rel="noopener noreferrer" aria-label="Voir la certification Google Data Studio sur Coursera">
+                            Google Data Studio : Création de Tableaux de Bord Interactifs - Coursera (2026)
+                            <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="certification-link" href="https://www.coursera.org/account/accomplishments/verify/1ARHEZZU7ST5" target="_blank" rel="noopener noreferrer" aria-label="Voir la certification Design Prompts for everyday work tasks">
+                            Design Prompts for everyday work tasks - Google (2026)
+                            <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>Simple Coding - The Open University (2023)</li>
                 </ul>
+            </article>
+        </section>
+
+        <section class="section-grid">
+            <article class="info-block">
+                <h2>Expériences Associatives</h2>
+                <div class="timeline">
+                    <div>
+                        <div class="experience-heading">
+                            <h3>IT Club AIAC - Membre du Bureau Exécutif</h3>
+                            <a class="details-link" href="club-it-aiac.html" target="_blank" rel="noopener noreferrer">
+                                Voir plus de détails
+                                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <p>Responsable événementiel : formations techniques, projets en développement et data, contribution aux événements du club.</p>
+                    </div>
+                    <div>
+                        <h3>Club Industriel AIAC - Membre du Bureau Exécutif</h3>
+                        <p>Responsable média.</p>
+                    </div>
+                    <div>
+                        <h3>Technovation - Mentor</h3>
+                        <p>Mentorat d'une équipe sur l'idéation, le développement et la présentation d'une solution innovante.</p>
+                    </div>
+                    <div>
+                        <div class="experience-heading">
+                            <h3>Association Maths&amp;Maroc - Membre</h3>
+                            <a class="details-link" href="association-maths-maroc.html" target="_blank" rel="noopener noreferrer">
+                                Voir plus de détails
+                                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <p>Organisation d'événements, communication digitale et accompagnement des participants.</p>
+                    </div>
+                    <div>
+                        <h3>Les Citoyens - Ambassadrice</h3>
+                        <p>Engagement associatif en tant qu'ambassadrice au sein de l'organisation Les Citoyens.</p>
+                    </div>
+                    <div>
+                        <h3>JCI Rabat - Membre</h3>
+                        <p>Participation aux activités et initiatives associatives de la Jeune Chambre Internationale de Rabat.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="info-block split-block">
+                <div>
+                    <h2>Langues</h2>
+                    <ul class="pill-list">
+                        <li>Arabe : langue maternelle</li>
+                        <li>Français : avancé</li>
+                        <li>Anglais : intermédiaire</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Soft Skills</h2>
+                    <ul class="pill-list">
+                        <li>Esprit analytique</li>
+                        <li>Résolution de problèmes</li>
+                        <li>Travail en équipe</li>
+                        <li>Organisation</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+
+            <div class="contact-cards">
+                <a href="mailto:ellbouazaouimouna@gmail.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <p>Email</p>
+                    <span>ellbouazaouimouna@gmail.com</span>
+                </a>
+
+                <a href="tel:+212624059706" class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <p>Téléphone</p>
+                    <span>+212 6 24 05 97 06</span>
+                </a>
+
+                <a href="https://github.com/MounaElBouazaoui" target="_blank" class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <p>GitHub</p>
+                    <span>MounaElBouazaoui</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/mouna-elbouazaoui-bb9467207" target="_blank" class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <p>LinkedIn</p>
+                    <span>mouna-elbouazaoui</span>
+                </a>
+
+                <div class="contact-card">
+                    <i class="fas fa-location-dot"></i>
+                    <p>Localisation</p>
+                    <span>Kénitra, Maroc</span>
+                </div>
+
+                <a href="Mon%20CV%20(1)%20(1).pdf" download class="cv-button">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
             </div>
+        </section>
+    </main>
 
-            <div>
-                <h4>Tools / Skills</h4>
-                <ul>
-                    <li>HTML / CSS</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <footer>
+        <p>© 2026 - Portfolio de Mouna El Bouazaoui</p>
+    </footer>
 
-    <div class="hero-image">
-        <!-- Remplace image.jpg par TA photo -->
-        <img src="image.jpeg" alt="Mon image">
-    </div>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-    <link rel="shortcut icon" href="favicon.png">
-</section>
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, "0");
+            const minutes = now.getMinutes().toString().padStart(2, "0");
+            const seconds = now.getSeconds().toString().padStart(2, "0");
 
-</main>
-<<section class="contact">
+            const clock = document.getElementById("clock");
+            if (clock) clock.textContent = `${hours}:${minutes}:${seconds}`;
+        }
 
-    <h2>Contact</h2>
+        setInterval(updateClock, 1000);
+        updateClock();
 
-    <div class="contact-cards">
+        const cursor = document.querySelector(".custom-cursor");
 
-        <a href="mailto: ellbouazaouimouna@gmail.com" class="contact-card">
-            <i class="fas fa-envelope"></i>
-            <p>Email</p>
-        </a>
-        <a href="https://github.com/ellbouazaouimouna-maker" target="_blank" class="contact-card">
-             <i class="fab fa-github"></i>
-             <p>GitHub</p>
-        </a>
-
-        <a href="https://www.linkedin.com/in/tonprofil" target="_blank" class="contact-card">
-            <i class="fab fa-linkedin"></i>
-            <p>LinkedIn</p>
-        </a>
-          <a href="cv.pdf" download class="cv-button">
-          <i class="fas fa-download"></i> Download CV
-        </a>
-    </div>
-
-</section>
-
-<footer>
-    <p>© 2026 - Mon Portfolio</p>
-</footer>
-<script>
-function updateClock() {
-    const now = new Date();
-
-    let hours = now.getHours().toString().padStart(2, '0');
-    let minutes = now.getMinutes().toString().padStart(2, '0');
-    let seconds = now.getSeconds().toString().padStart(2, '0');
-
-    const time = `${hours}:${minutes}:${seconds}`;
-    document.getElementById("clock").textContent = time;
-}
-
-// Mise à jour chaque seconde
-setInterval(updateClock, 1000);
-
-// Lancer immédiatement
-updateClock();
-</script>
-<script>
-const cursor = document.querySelector(".custom-cursor");
-
-document.addEventListener("mousemove", (e) => {
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
-});
-</script>
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
+    </script>
 </body>
 </html>
