@@ -7,6 +7,11 @@
 
 html {
     scroll-behavior: smooth;
+    --header-offset: 120px;
+}
+
+main [id] {
+    scroll-margin-top: var(--header-offset);
 }
 
 body {
@@ -35,6 +40,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+    padding: 16px 0;
 }
 
 .navbar-brand {
@@ -49,7 +55,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: clamp(18px, 3vw, 36px);
+    gap: 16px 22px;
+    flex-wrap: wrap;
 }
 
 .navbar-links a {
@@ -143,6 +150,10 @@ body {
     gap: 50px;
     margin-top: 30px;
     flex-wrap: wrap;
+}
+
+.hero-info > h2 {
+    flex-basis: 100%;
 }
 
 .hero-info h4 {
@@ -858,10 +869,14 @@ footer {
 
     .navbar {
         min-height: 68px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
     }
 
     .navbar-links {
         gap: 16px;
+        justify-content: flex-start;
     }
 
     .association-header {
@@ -929,9 +944,9 @@ footer {
 
     .navbar-links {
         width: 100%;
-        justify-content: space-between;
+        justify-content: flex-start;
         gap: 10px;
-        overflow-x: auto;
+        flex-wrap: wrap;
     }
 
     .navbar-links a {

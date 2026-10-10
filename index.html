@@ -18,6 +18,11 @@
                 <a href="#accueil">Accueil</a>
                 <a href="#competences">Compétences</a>
                 <a href="#projets">Projets</a>
+                <a href="#experiences">Expériences</a>
+                <a href="#formation">Formation</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#engagements">Engagements associatifs</a>
+                <a href="#langues">Langues &amp; qualités</a>
                 <a href="#contact">Contact</a>
             </div>
         </nav>
@@ -37,6 +42,7 @@
                 </p>
 
                 <div class="hero-info" id="competences">
+                    <h2>Compétences</h2>
                     <div>
                         <h4>Domaines</h4>
                         <ul>
@@ -100,7 +106,7 @@
             </a>
         </section>
 
-        <section class="professional-experience" aria-labelledby="professional-experience-title">
+        <section class="professional-experience" id="experiences" aria-labelledby="professional-experience-title">
             <article class="info-block">
                 <h2 id="professional-experience-title">Expériences professionnelles</h2>
                 <div class="timeline">
@@ -128,7 +134,7 @@
 
         <section class="section-grid">
             <article class="info-block">
-                <h2>Éducation</h2>
+                <h2 id="formation">Éducation</h2>
                 <div class="timeline">
                     <div>
                         <h3>Cycle Ingénieur - Génie Informatique</h3>
@@ -146,7 +152,7 @@
             </article>
 
             <article class="info-block">
-                <h2>Certifications</h2>
+                <h2 id="certifications">Certifications</h2>
                 <ul class="pill-list">
                     <li>
                         <a class="certification-link" href="https://www.coursera.org/account/accomplishments/verify/Z0UGKLXMLCTJ" target="_blank" rel="noopener noreferrer" aria-label="Voir la certification Introduction to Oracle Cloud Essentials">
@@ -173,7 +179,7 @@
 
         <section class="section-grid">
             <article class="info-block">
-                <h2>Expériences Associatives</h2>
+                <h2 id="engagements">Expériences Associatives</h2>
                 <div class="timeline">
                     <div>
                         <h3>AIAC Junior-Entreprise (AJE) — Présidente</h3>
@@ -218,7 +224,7 @@
                 </div>
             </article>
 
-            <article class="info-block split-block">
+            <article class="info-block split-block" id="langues">
                 <div>
                     <h2>Langues</h2>
                     <ul class="pill-list">
@@ -262,10 +268,10 @@
                     <span>ellbouazaouimouna-maker</span>
                 </a>
 
-                <a href="https://www.linkedin.com/in/mouna-elbouazaoui-bb9467207" target="_blank" class="contact-card">
+                <a href="https://www.linkedin.com/in/mouna-el-bouazaoui-bb9467207/" target="_blank" rel="noopener noreferrer" class="contact-card">
                     <i class="fab fa-linkedin"></i>
                     <p>LinkedIn</p>
-                    <span>mouna-elbouazaoui</span>
+                    <span>mouna-el-bouazaoui</span>
                 </a>
 
                 <div class="contact-card">
@@ -274,8 +280,8 @@
                     <span>Kénitra, Maroc</span>
                 </div>
 
-                <a href="Mon%20CV%20(1)%20(1).pdf" download class="cv-button">
-                    <i class="fas fa-download"></i> Download CV
+                <a href="Mon%20CV.pdf" download="CV-Mouna-El-Bouazaoui.pdf" class="cv-button">
+                    <i class="fas fa-download" aria-hidden="true"></i> Télécharger mon CV
                 </a>
             </div>
         </section>
@@ -286,6 +292,13 @@
     </footer>
 
     <script>
+        const header = document.querySelector(".site-header");
+        const updateHeaderOffset = () => {
+            document.documentElement.style.setProperty("--header-offset", `${header.offsetHeight + 24}px`);
+        };
+        new ResizeObserver(updateHeaderOffset).observe(header);
+        updateHeaderOffset();
+
         function updateClock() {
             const now = new Date();
             const hours = now.getHours().toString().padStart(2, "0");
