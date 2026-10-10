@@ -26,33 +26,35 @@
     <main>
         <section class="hero" id="accueil">
             <div class="hero-text">
-                <h1>Hey! Mouna El Bouazaoui Here</h1>
+                <h1>Mouna El Bouazaoui</h1>
 
                 <p class="subtitle">
-                    Je suis élève ingénieure en Génie Informatique à l'Académie Internationale de l'Aviation Civile (AIAC).
+                    Élève ingénieure en Génie Informatique à l'Académie Internationale Mohammed VI de l'Aviation Civile (AIAC), orientée Data Engineering, Big Data et intelligence artificielle.
+                </p>
 
                 <p>
-                    J'aime concevoir des solutions efficaces, comprendre le fonctionnement profond des systèmes et travailler sur des projets mêlant web, bases de données, data engineering et analyse.
+                    Issue des classes préparatoires MPSI, je m'appuie sur ma formation scientifique pour concevoir des pipelines de données : collecte, nettoyage, transformation et exploitation. Mes projets associent Python, SQL et PostgreSQL à l'analyse de données, à la visualisation et au Machine Learning.
                 </p>
 
                 <div class="hero-info" id="competences">
                     <div>
                         <h4>Domaines</h4>
                         <ul>
-                            <li>Développement web</li>
-                            <li>Data Engineering</li>
+                            <li>Data Engineering et pipelines ETL</li>
                             <li>Analyse de données</li>
-                            <li>Machine Learning</li>
+                            <li>Machine Learning et visualisation</li>
+                            <li>Développement Full Stack</li>
                         </ul>
                     </div>
 
                     <div>
                         <h4>Outils / Skills</h4>
                         <ul>
-                            <li>Python, Java, SQL</li>
-                            <li>HTML, CSS, JavaScript</li>
-                            <li>GitHub, Docker, PostgreSQL</li>
-                            <li>Power BI, Excel, LaTeX</li>
+                            <li>Python, Pandas, SQL, PostgreSQL</li>
+                            <li>Scikit-learn, Power BI, Excel</li>
+                            <li>React, TypeScript, Node.js, Express</li>
+                            <li>Java, C#, Windows Forms</li>
+                            <li>Git, GitHub, Docker</li>
                         </ul>
                     </div>
                 </div>
@@ -60,31 +62,40 @@
 
             <div class="hero-image">
                 <div class="profile-visual">
-                    <img src="assets/images/photo-mouna.jpeg" alt="Photo de Mouna El Bouazaoui" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+                    <img src="assets/images/photo-mouna.png" alt="Photo de Mouna El Bouazaoui" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
                     <div class="profile-fallback" aria-hidden="true">MEB</div>
                 </div>
             </div>
         </section>
 
-        <section class="cards" id="projets" aria-label="Projets">
-            <a class="card" href="https://github.com/ellbouazaouimouna-maker/Systeme-etude-de-credit" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet Data Engineering et Analytics sur GitHub">
+        <section class="cards" id="projets" aria-label="Projets Data Engineering et Machine Learning">
+            <a class="card" href="https://github.com/ellbouazaouimouna-maker/California-Housing-ETL-ML" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet California Housing sur GitHub">
                 <div class="card-content">
-                    <h2>Data Engineering & Analytics</h2>
-                    <p>Data Warehouse PostgreSQL, analyse et visualisation avec Power BI, expérimentation de modèles Machine Learning.</p>
+                    <span class="project-label">ETL &amp; Machine Learning · En cours</span>
+                    <h2>California Housing</h2>
+                    <p>Pipeline de données immobilières associant préparation des données, stockage PostgreSQL et Machine Learning. Projet en cours, avec une visualisation Power BI prévue dans le pipeline.</p>
+                    <p class="project-stack">Python · Pandas · PostgreSQL · Scikit-learn · Power BI</p>
+                    <span class="project-action">Voir le dépôt GitHub <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
                 </div>
             </a>
 
-            <a class="card" href="https://github.com/ellbouazaouimouna-maker/Projet-TO-DO-LIST-avec-DOCKER" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet Application Web To-Do List sur GitHub">
+            <a class="card" href="https://github.com/ellbouazaouimouna-maker/Sales-ETL-Data-Engineering" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet Sales ETL sur GitHub">
                 <div class="card-content">
-                    <h2>Application Web To-Do List</h2>
-                    <p>Développement HTML/CSS et déploiement avec Docker.</p>
+                    <span class="project-label">Data Engineering · Données de ventes</span>
+                    <h2>Sales ETL</h2>
+                    <p>Extraction de données de ventes au format CSV, nettoyage avec Pandas et export des données préparées pour leur exploitation.</p>
+                    <p class="project-stack">Python · Pandas · CSV · Git</p>
+                    <span class="project-action">Voir le dépôt GitHub <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
                 </div>
             </a>
 
-            <a class="card" href="https://github.com/ellbouazaouimouna-maker/Gestion-de-salle-de-sport" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet Gestion de Salle de Sport sur GitHub">
+            <a class="card" href="https://github.com/ellbouazaouimouna-maker/Weather-Data-Engineering-Pipeline" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet Weather Data Engineering Pipeline sur GitHub">
                 <div class="card-content">
-                    <h2>Gestion de Salle de Sport</h2>
-                    <p>Application Java pour gérer les adhérents, abonnements, activités sportives et le suivi des membres.</p>
+                    <span class="project-label">Data Engineering · Données météo</span>
+                    <h2>Weather Data Pipeline</h2>
+                    <p>Pipeline de collecte et de traitement de données météorologiques marocaines, structuré autour des étapes d'extraction, de transformation et de chargement.</p>
+                    <p class="project-stack">Python · ETL · Données météorologiques</p>
+                    <span class="project-action">Voir le dépôt GitHub <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
                 </div>
             </a>
         </section>
@@ -95,23 +106,21 @@
                 <div class="timeline">
                     <div>
                         <div class="experience-heading">
-                            <h3>Stage d'observation — Ibhar Network</h3>
-                            <span class="report-link report-link-disabled" aria-disabled="true" title="Le rapport sera ajouté prochainement">
-                                <i class="fas fa-file-pdf" aria-hidden="true"></i>
-                                Rapport bientôt disponible
-                            </span>
+                            <h3>Stagiaire développeuse Full Stack — Jisrouk</h3>
                         </div>
-                        <p>Immersion au sein d'une startup et découverte de son environnement professionnel, de son organisation et de ses activités.</p>
+                        <p class="experience-date">Juin – Août 2026</p>
+                        <p>Contribution au développement d'une plateforme reliant établissements et enseignants, avec des fonctionnalités de formation, d'offres d'emploi et de candidatures. Participation au développement Full Stack avec React, TypeScript, Node.js, Express et PostgreSQL.</p>
                     </div>
                     <div>
                         <div class="experience-heading">
-                            <h3>Stage — AIC Métallurgie</h3>
+                            <h3>Stagiaire en développement logiciel — AIC Métallurgie (Delta Holding)</h3>
                             <a class="report-link" href="output/pdf/rapport-stage-aic-metallurgie.pdf" target="_blank" rel="noopener noreferrer" aria-label="Voir le rapport du stage AIC Métallurgie au format PDF">
                                 <i class="fas fa-file-pdf" aria-hidden="true"></i>
                                 Voir le rapport de stage
                             </a>
                         </div>
-                        <p>Découverte du fonctionnement de l'entreprise et de son environnement industriel.</p>
+                        <p class="experience-date">Août – Septembre 2026</p>
+                        <p>Développement d'une application de gestion de stock en C# et Windows Forms, avec Microsoft Access. Gestion des produits, des fournisseurs et des mouvements de stock, avec mise à jour des quantités et conservation de l'historique des opérations.</p>
                     </div>
                 </div>
             </article>
@@ -131,7 +140,7 @@
                     </div>
                     <div>
                         <h3>Baccalauréat Sciences Mathématiques A</h3>
-                        <p>Lycée Echriki, Kénitra · Mention Bien · 2023</p>
+                        <p>Lycée Echraibi · Mention Bien · 2023</p>
                     </div>
                 </div>
             </article>
@@ -167,6 +176,10 @@
                 <h2>Expériences Associatives</h2>
                 <div class="timeline">
                     <div>
+                        <h3>AIAC Junior-Entreprise (AJE) — Présidente</h3>
+                        <p>Pilotage des activités, coordination des équipes et supervision des initiatives. Représentation de l'association et contribution à son développement et à son rayonnement.</p>
+                    </div>
+                    <div>
                         <div class="experience-heading">
                             <h3>IT Club AIAC - Membre du Bureau Exécutif</h3>
                             <a class="details-link" href="club-it-aiac.html" target="_blank" rel="noopener noreferrer">
@@ -174,15 +187,15 @@
                                 <i class="fas fa-arrow-right" aria-hidden="true"></i>
                             </a>
                         </div>
-                        <p>Responsable événementiel : formations techniques, projets en développement et data, contribution aux événements du club.</p>
+                        <p>Membre du bureau exécutif et responsable des événements scientifiques. Engagement dans les initiatives techniques du club, notamment la conception et la présentation d'un projet de détection de capteurs IoT défaillants au Festival des Sciences de Rabat 2026.</p>
                     </div>
                     <div>
                         <h3>Club Industriel AIAC - Membre du Bureau Exécutif</h3>
                         <p>Responsable média.</p>
                     </div>
                     <div>
-                        <h3>Technovation - Mentor</h3>
-                        <p>Mentorat d'une équipe sur l'idéation, le développement et la présentation d'une solution innovante.</p>
+                        <h3>Technovation — Mentor et ambassadrice</h3>
+                        <p>Accompagnement de jeunes filles dans la conception de projets technologiques, de l'idéation au développement et à la présentation de leur solution.</p>
                     </div>
                     <div>
                         <div class="experience-heading">
@@ -192,7 +205,7 @@
                                 <i class="fas fa-arrow-right" aria-hidden="true"></i>
                             </a>
                         </div>
-                        <p>Organisation d'événements, communication digitale et accompagnement des participants.</p>
+                        <p>Contribution à la communication et aux initiatives scientifiques d'une association engagée dans les olympiades et les compétitions internationales. Couverture digitale d'événements et accompagnement des participants.</p>
                     </div>
                     <div>
                         <h3>Les Citoyens - Ambassadrice</h3>
@@ -243,10 +256,10 @@
                     <span>+212 6 24 05 97 06</span>
                 </a>
 
-                <a href="https://github.com/MounaElBouazaoui" target="_blank" class="contact-card">
+                <a href="https://github.com/ellbouazaouimouna-maker" target="_blank" rel="noopener noreferrer" class="contact-card">
                     <i class="fab fa-github"></i>
                     <p>GitHub</p>
-                    <span>MounaElBouazaoui</span>
+                    <span>ellbouazaouimouna-maker</span>
                 </a>
 
                 <a href="https://www.linkedin.com/in/mouna-elbouazaoui-bb9467207" target="_blank" class="contact-card">

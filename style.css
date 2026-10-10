@@ -276,6 +276,33 @@ body {
     transform: translateZ(50px);
 }
 
+.project-label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #d5d5df;
+}
+
+.card .project-stack {
+    margin-top: 16px;
+    font-size: 0.85rem;
+}
+
+.project-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.timeline .experience-date {
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+}
+
 .card h2,
 .info-block h2 {
     margin-bottom: 14px;
